@@ -1,0 +1,339 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    width: 100%;
+}
+
+.header-banner-container {
+    background-image: url('фон1.png'); /* Фоновое изображение */
+    background-size: 2000px; /* Уменьшение размера изображения */
+    background-repeat: no-repeat; /* Предотвращение повторения изображения */
+    background-position: center; /* Центрирование изображения */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.home-page .header .nav a {
+    color: #fff;
+}
+
+.catalog-page .header {
+    background-color: #fff; /* Белый фон для шапки на странице каталога */
+}
+
+.catalog-page .header .nav a,
+.product-page .header .nav a,
+.cart-page .header .nav a {
+    color: #000; /* Черный цвет шрифта для каталога */
+}
+
+.logo img {
+    height: 80px; /* Увеличенный размер логотипа */
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px; /* Увеличенный размер шрифта */
+    padding: 20px 0px; /* Добавлены отступы */
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav a:not(:last-child)::after {
+    content: '|';
+    margin: 0 30px;
+    color: #ccc;
+    padding: 10px 10px;
+}
+
+.cart-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding-right: 150px; /* Смещение контейнера корзины от левого края */
+}
+
+.cart-section h1 {
+  margin-bottom: 20px; /* Дополнительный отступ для заголовка */
+}
+
+.cart-items {
+    width: 70%;
+    margin-left: 50px; /* Смещение товаров от левого края */
+    margin-bottom: 5px; /* Отступ снизу для товаров */
+    margin-top: 50px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.cart-item .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.cart-item .details p {
+    margin: 0;
+}
+
+.cart-item .price {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    flex: 1;
+}
+
+.cart-item button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delivery-form {
+    margin-top: 20px;
+    padding-left: 50px; /* Смещение формы от левого края */
+}
+
+.delivery-form h3 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.delivery-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.delivery-form input[type="text"] {
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cart-total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 20px;
+  padding-left: 50px; /* Смещение заголовка "Итого" от левого края */
+}
+
+.cart-total h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.cart-total p {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0px 0px;
+}
+
+.cart-total button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.banner {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.banner button {
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px; /* Скругление углов */
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    background-color: #FFFFFF;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery img {
+    width: 400px; /* Увеличенный размер изображений */
+    height: auto;
+}
+
+.catalog {
+    display: flex;
+    padding: 20px;
+}
+
+.filters {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.filters h3, .filters h4 {
+    margin-bottom: 10px;
+}
+
+.filters label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+}
+
+.product {
+    text-align: center;
+    width: 290px;
+    padding: 30px 50px;
+
+}
+
+.product img {
+    width: 300px;
+    height: auto;
+
+}
+
+.product-info {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.product-image {
+    margin-left: 80px; /* Смещение картинки от левого края */
+}
+
+.product-image img {
+    width: 300px;
+    height: auto;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+.product-description {
+    max-width: 500px;
+}
+
+.product-description h2 {
+    margin-top: 50px;
+}
+
+.product-description p {
+    margin: 10px 0;
+}
+
+.product-description .price {
+    font-size: 36px; /* Увеличенный размер шрифта для цены */
+    font-weight: bold; /* Жирный шрифт для цены */
+}
+
+.product-description button {
+    padding: 15px 25px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px; /* Скругление углов */
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.add-to-cart {
+    padding: 5px 10px; /* Уменьшенные отступы для кнопки */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px; /* Скругление углов */
+    margin-top: 10px;
+    font-size: 12px; /* Уменьшенный размер шрифта */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    background-color: #F0F0F0;
+    color: #333;
+    margin-top: auto; /* Перемещает футер вниз */
+}
+
+.footer-logo img {
+    height: 80px; /* Увеличенный размер логотипа */
+    padding: 15px 10px;
+}
+
+.contacts {
+    text-align: right;
+    width: 600px;
+}
+
+.contacts p {
+    margin: 5px 0;
+}

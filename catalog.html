@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - 17 Carat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo3.png" type="image/x-icon"> <!-- Иконка вкладки -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> <!-- Подключение шрифта PT Serif -->
+</head>
+<body class="catalog-page">
+    <div class="container">
+        <!-- Блок 1: Логотип и навигация -->
+        <div class="header">
+            <div class="logo">
+                <img src="logob.png" alt="17 Carat Logo">
+            </div>
+            <div class="nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="cart.html">Корзина</a>
+            </div>
+        </div>
+
+        <!-- Блок 2: Фильтры и товары -->
+        <div class="catalog">
+            <div class="filters">
+                <h3>Фильтры</h3>
+                <h4>Тип</h4>
+                <label><input type="checkbox" name="filter" value="necklace" class="filter-checkbox"> Колье</label>
+                <label><input type="checkbox" name="filter" value="earrings" class="filter-checkbox"> Серьги</label>
+                <label><input type="checkbox" name="filter" value="pendant" class="filter-checkbox"> Подвески</label>
+                <h4>Поиск</h4>
+                <input type="text" id="searchInput" placeholder="Поиск...">
+            </div>
+            <div class="products">
+              <div class="product necklace">
+                  <a href="necklace.html">
+                      <img src="колье1.png" alt="Колье">
+                  </a>
+                  <p>Колье Vivienne Westwood Mini Bas Relief Pearl choker (Dark Grey)</p>
+                  <p>21000 руб.</p>
+                  <button class="add-to-cart" data-name="Колье Vivienne Westwood Mini Bas Relief Pearl choker (Dark Grey)" data-price="21000" data-image="колье1.png">Добавить в корзину</button>
+              </div>
+              <div class="product earrings">
+                  <a href="earrings.html">
+                      <img src="серьги1.png" alt="Серьги">
+                  </a>
+                  <p>Серьги Vivienne Westwood Mini Bas Relief</p>
+                  <p>23000 руб.</p>
+                  <button class="add-to-cart" data-name="Серьги Vivienne Westwood Mini Bas Relief" data-price="23000" data-image="серьги1.png">Добавить в корзину</button>
+              </div>
+              <div class="product pendant">
+                  <a href="pendant.html">
+                      <img src="подвеска1.png" alt="Подвеска">
+                  </a>
+                  <p>Подвеска Vivienne Westwood Petite Orb</p>
+                  <p>29000 руб.</p>
+                  <button class="add-to-cart" data-name="Подвеска Vivienne Westwood Petite Orb" data-price="29000" data-image="подвеска1.png">Добавить в корзину</button>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок 3: Футер с контактами -->
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="logo1.png" alt="17 Carat Logo">
+        </div>
+        <div class="contacts">
+            <p>Контакты</p>
+            <p>8-***-***-****</p>
+            <p>17caratshop@mail.ru</p>
+            <p>Ульяновск, ул. Университетская набережная, 40</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
